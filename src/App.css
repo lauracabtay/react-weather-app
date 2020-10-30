@@ -1,36 +1,38 @@
-button,
-h1,
-h2.current-day,
-h2.current-weather,
-p,
-fa-location-arrow,
-.hour-temp {
-  color: #343a40;
-  font-family: "Roboto Mono", monospace;
-  margin-bottom: 0;
-  margin-top: 0;
+.App {
+  text-align: center;
 }
 
-.container {
-  margin: 0 auto;
-  margin-top: 40px;
-  max-width: 900px;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.c-main {
-  background-image: linear-gradient(120deg, #a3c8df 0%, #ebedee 100%);
-  border: none;
-  box-shadow: 0px 8px 15px 5px rgba(0, 0, 0, 0.2);
-  max-width: 900px;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.btn:focus {
-  outline: none;
-  box-shadow: none;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-@media (max-width: 480px) {
-  .cb-main {
-    padding-left: 0;
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
