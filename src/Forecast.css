@@ -1,0 +1,75 @@
+h2.carousel {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+  color: #7993a3;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 0;
+  font-weight: 900;
+}
+
+h5.hour-temp {
+  font-size: 24px;
+}
+
+.card-img-top {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+}
+
+.p-wind-small,
+.p-humidity-small {
+  font-size: 18px;
+  display: inline;
+  font-weight: 300;
+}
+
+.img-wind-small,
+.img-humidity-small {
+  font-size: 20px;
+  display: inline;
+  color: #343a40;
+}
+
+.img-humidity-small {
+  margin-top: 15px;
+}
+
+.all-weather-cards {
+  margin: 0;
+  padding: 0px 24px;
+}
+
+.c-carousel {
+  background-image: linear-gradient(120deg, #a3c8df 0%, #ebedee 100%);
+  border: none;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.weather-card {
+  border: none;
+  box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+  .all-weather-cards {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  .all-weather-cards {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 660px) {
+  .all-weather-cards {
+    max-width: 100%;
+  }
+}
