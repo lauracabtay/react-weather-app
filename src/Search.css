@@ -1,19 +1,19 @@
-button.location {
+.location {
   background: #ffffff;
   display: block;
   margin: 0;
   border-color: #e2e6ea;
 }
 
-button.location:hover {
+.location:hover {
   background: #cccfd3;
 }
 
-div.current-location {
+.current-location {
   padding-left: 10px;
 }
 
-button.search {
+.search {
   background: #047bfe;
   border: 1px solid #047bfe;
   border-top-right-radius: 5px;
@@ -27,12 +27,12 @@ button.search {
   line-height: 1;
 }
 
-button.search:hover {
+.search:hover {
   background: #0461c5;
   border: 1px solid #0461c5;
 }
 
-div.search-bar {
+.search-bar {
   padding-left: 0;
   padding-right: 20px;
 }

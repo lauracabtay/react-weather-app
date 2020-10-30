@@ -1,16 +1,16 @@
-button.button-c {
+.button-c {
   border-radius: 100%;
 }
 
-button.button-f {
+.button-f {
   border-radius: 100%;
 }
 
-button.button-f:hover {
+.button-f:hover {
   background: #5b5b5c;
   border-color: #5b5b5c;
 }
-div.degree-button {
+.degree-button {
   margin-left: 2px;
 }
 
@@ -19,36 +19,36 @@ h1 {
   padding-left: 25px;
 }
 
-h2.current-day,
-h2.current-weather {
+.current-day,
+.current-weather {
   font-weight: 300;
   padding-left: 25px;
   text-transform: capitalize;
 }
 
-p.temperature {
+.temperature {
   font-size: 80px;
   font-weight: 700;
   line-height: 0.8;
   display: inline;
 }
 
-div.current-info {
+.current-info {
   margin-left: 50px;
 }
 
-div.degree-toggle {
+.degree-toggle {
   margin-left: 20px;
   padding: 0;
 }
 
-img.weather-icon {
+.weather-icon {
   width: 120px;
   height: 120px;
 }
 
-div.row-humidity,
-div.row-wind {
+.row-humidity,
+.row-wind {
   line-height: 0;
   height: 34px;
   text-align: left;
@@ -80,7 +80,7 @@ div.row-wind {
     font-size: 24px;
   }
 
-  p.temperature {
+  .temperature {
     font-size: 60px;
   }
 
@@ -106,7 +106,7 @@ div.row-wind {
     font-size: 22px;
   }
 
-  p.temperature {
+  .temperature {
     font-size: 48px;
   }
 
@@ -137,7 +137,7 @@ div.row-wind {
     font-size: 18px;
   }
 
-  p.temperature {
+  .temperature {
     font-size: 40px;
   }
 
@@ -154,13 +154,13 @@ div.row-wind {
 }
 
 @media (max-width: 660px) {
-  img.weather-icon {
+  .weather-icon {
     width: 80px;
     height: auto;
     padding-left: 0;
   }
 
-  div.current-info {
+  .current-info {
     margin-left: 30px;
     padding-left: 0;
   }
@@ -174,7 +174,7 @@ div.row-wind {
     font-size: 14px;
   }
 
-  p.temperature {
+  .temperature {
     font-size: 34px;
   }
 
@@ -205,11 +205,11 @@ div.row-wind {
     font-weight: 900;
   }
 
-  p.temperature {
+  .temperature {
     font-size: 20px;
   }
 
-  img.weather-icon {
+  .weather-icon {
     width: 50px;
     height: auto;
   }

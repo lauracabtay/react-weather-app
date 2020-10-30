@@ -1,7 +1,7 @@
 button,
 h1,
-h2.current-day,
-h2.current-weather,
+.current-day,
+.current-weather,
 p,
 fa-location-arrow,
 .hour-temp {

@@ -1,4 +1,4 @@
-h2.carousel {
+.carousel {
   font-size: 22px;
   font-weight: 700;
   margin-top: 10px;
@@ -8,7 +8,7 @@ h2.carousel {
   font-weight: 900;
 }
 
-h5.hour-temp {
+.hour-temp {
   font-size: 24px;
 }
 
