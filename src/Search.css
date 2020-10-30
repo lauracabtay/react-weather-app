@@ -1,0 +1,55 @@
+button.location {
+  background: #ffffff;
+  display: block;
+  margin: 0;
+  border-color: #e2e6ea;
+}
+
+button.location:hover {
+  background: #cccfd3;
+}
+
+div.current-location {
+  padding-left: 10px;
+}
+
+button.search {
+  background: #047bfe;
+  border: 1px solid #047bfe;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+button.search:hover {
+  background: #0461c5;
+  border: 1px solid #0461c5;
+}
+
+div.search-bar {
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.search-bar-row {
+  padding-left: 25px;
+  margin: 20px 0;
+}
+
+@media (max-width: 900px) {
+  .search-bar-row {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .current-location {
+    padding-left: 0;
+  }
+}
