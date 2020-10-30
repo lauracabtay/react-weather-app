@@ -1,4 +1,4 @@
-# my-weather-app
+# react-weather-app
 
 This repository contains the source code used to build a <a href="https://nostalgic-brahmagupta-a02d68.netlify.app/?" target="_blank">weather forecast application</a> developed whilst completing <a href="https://www.shecodes.io/" target="_blank">SheCodes.io</a> Front-End Development and React workshops.
 
