@@ -55,21 +55,3 @@
   border: none;
   box-shadow: 0px 2px 15px 2px rgba(0, 0, 0, 0.2);
 }
-
-@media (max-width: 900px) {
-  .all-weather-cards {
-    min-width: 50%;
-  }
-}
-
-@media (max-width: 770px) {
-  .all-weather-cards {
-    max-width: 30%;
-  }
-}
-
-@media (max-width: 660px) {
-  .all-weather-cards {
-    max-width: 100%;
-  }
-}

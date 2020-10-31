@@ -41,15 +41,3 @@
   padding-left: 25px;
   margin: 20px 0;
 }
-
-@media (max-width: 900px) {
-  .search-bar-row {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .current-location {
-    padding-left: 0;
-  }
-}
