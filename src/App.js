@@ -2,8 +2,7 @@ import React from "react";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Search from "./Search";
-import Currentweather from "./Currentweather";
+import Weather from "./Weather";
 import Forecast from "./Forecast";
 import Footer from "./Footer";
 
@@ -13,8 +12,7 @@ export default function App() {
       <div className="container">
         <div className="card c-main">
           <div className="card-body cb-main">
-            <Search />
-            <Currentweather />
+            <Weather />
           </div>
           <Forecast />
         </div>
