@@ -1,63 +1,25 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 export default function Weather() {
-
-function formatDate(timestamp) {
-let currentDate = new Date(timestamp);
-
-let days = [
-  "Sun",
-  "Mon",
-  "Tue",
-  "Wed",
-  "Thu",
-  "Fri",
-  "Sat"
-];
-
-let currentDay = days[currentDate.getDay()];
-let currentHour = currentDate.getHours();
-let currentMinute = currentDate.getMinutes();
-
-if (currentHour < 10) {
-  currentHour = `0${currentHour}`;
-}
-if (currentMinute < 10) {
-  currentMinute = `0${currentMinute}`;
-}
-return `${currentDay}, ${formatHours(timestamp)}`;
-}
-
-function formatHours(timestamp) {
-let currentDate = new Date(timestamp);
-let currentHour = currentDate.getHours();
-let currentMinute = currentDate.getMinutes();
-
-if (currentHour < 10) {
-  currentHour = `0${currentHour}`;
-}
-if (currentMinute < 10) {
-  currentMinute = `0${currentMinute}`;
-}
-return `${currentHour}:${currentMinute}`;
-}
 function showWeather(response) {
     setWeather({
-      day: formatDate(response.data.dt *1000),
+      ready: true,
+      city: response.data.name,
+      date: new Date(response.data.dt *1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
       icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
     });
-    setLoaded(true);
   }
 
+  let [weather, setWeather] = useState({ loaded: false});
   let [city, setCity] = useState("");
-  let [weather, setWeather] = useState({});
-  let [loaded, setLoaded] = useState(false);
+
 
   let form = (
     <form onSubmit={handleSubmit}>
@@ -106,14 +68,15 @@ function showWeather(response) {
     axios.get(apiUrl).then(showWeather);
   }
 
-if (loaded) {
+if (weather.ready) {
   return (
     <div className="Weather">
       {form}
        <div className="Currentweather row current-weather">
          <div className="col-5">
-        <h1>{city}</h1>
-        <h2 className="current-day">{weather.day}</h2>
+        <h1>{weather.city}</h1>
+        <h2 className="current-day">
+          <FormatDate currentDate={weather.date} /></h2>
         <h2 className="current-weather">{weather.description}</h2>
       </div>
       <div className="col-1 current-weather">

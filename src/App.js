@@ -12,7 +12,7 @@ export default function App() {
       <div className="container">
         <div className="card c-main">
           <div className="card-body cb-main">
-            <Weather />
+            <Weather defaultCity="London"/>
           </div>
           <Forecast />
         </div>
