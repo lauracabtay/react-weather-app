@@ -43,13 +43,6 @@ function showWeather(response) {
             </div>
           </div>
         </div>
-        <div className="col-1 current-location">
-          <div className="input-group-prepend">
-            <button type="button" className="btn btn-light location">
-              <i className="fas fa-location-arrow"></i>
-            </button>
-          </div>
-        </div>
       </div>
     </form>
   )

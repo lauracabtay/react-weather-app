@@ -1,18 +1,3 @@
-.location {
-  background: #ffffff;
-  display: block;
-  margin: 0;
-  border-color: #e2e6ea;
-}
-
-.location:hover {
-  background: #cccfd3;
-}
-
-.current-location {
-  padding-left: 10px;
-}
-
 .search {
   background: #047bfe;
   border: 1px solid #047bfe;
