@@ -35,8 +35,8 @@ API:
 
 <ul>
 <li>Location search</li>
-<li>Geolocation</li>
 <li>Current weather information</li>
+<li>Unit conversion</li>
 <li>3-hour forecast carousel</li>
 </ul>
 
