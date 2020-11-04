@@ -2,36 +2,24 @@ import React from "react";
 import FormatDate from "./FormatDate";
 import "./WeatherInfo.css";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 
 
 export default function WeatherInfo(props) {
    return (<div className="WeatherInfo Currentweather row current-weather">
-         <div className="col-5">
+         <div className="col-4.5">
         <h1>{props.data.city}</h1>
         <h2 className="current-day">
           <FormatDate currentDate={props.data.date} /></h2>
         <h2 className="current-weather">{props.data.description}</h2>
       </div>
-      <div className="col-1 current-weather">
+      <div className="col-1 current-weather-icon">
         <WeatherIcon code={props.data.icon}/>
       </div>
-      <div className="col-2 current-info">
-        <p className="temperature">{Math.round(props.data.temperature)}</p>
-        <div
-          className="btn-group degree-button"
-          role="group"
-          aria-label="Basic example"
-        >
-          <button type="button" className="btn btn-primary button-c">
-            °C
-          </button>
-          <button type="button" className="btn btn-dark button-f">
-            °F
-          </button>
-        </div>
-      </div>
-      <div className="col-3">
+ 
+        <WeatherTemperature celsius={props.data.temperature} />
+      <div className="col-2 humidity-wind">
         <div className="row-humidity">
           <i className="fas fa-cloud-rain img-humidity img-humidity-large"></i>
           <span>

@@ -1,20 +1,3 @@
-.button-c {
-  border-radius: 100%;
-}
-
-.button-f {
-  border-radius: 100%;
-}
-
-.button-f:hover {
-  background: #5b5b5c;
-  border-color: #5b5b5c;
-}
-.degree-button {
-  margin-left: 2px;
-  display: block;
-}
-
 h1 {
   font-weight: 900;
   padding-left: 25px;
@@ -27,20 +10,24 @@ h1 {
   text-transform: capitalize;
 }
 
+.current-weather-icon {
+  position: relative;
+  left: 50px;
+}
+
 .temperature {
   font-size: 80px;
   font-weight: 700;
   line-height: 0.8;
   display: inline;
+  position: relative;
+  left: 50px;
+  top: 30px;
 }
 
 .current-info {
-  margin-left: 50px;
-}
-
-.degree-toggle {
-  margin-left: 20px;
-  padding: 0;
+  margin-left: 30px;
+  min-width: 250px;
 }
 
 .humidity,
@@ -65,4 +52,16 @@ h1 {
   display: inline;
   font-size: 24px;
   font-weight: 300;
+}
+
+.unit {
+  vertical-align: top;
+  position: relative;
+  left: 50px;
+  top: 30px;
+}
+
+.humidity-wind {
+  position: relative;
+  left: 30px;
 }
