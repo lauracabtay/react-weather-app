@@ -1,0 +1,27 @@
+.WeatherForecast {
+  text-align: center;
+}
+
+.WeatherForecast canvas {
+  display: block;
+  margin: 5px auto;
+  height: 50px;
+  width: 50px;
+}
+
+.WeatherForecast {
+  margin-top: 50px;
+  font-family: monospace;
+}
+
+.forecastTime {
+  font-size: 20px;
+  font-weight: 700;
+  color: #353b3f;
+}
+
+.forecastTemperature {
+  font-weight: 300;
+  font-size: 16px;
+  color: #353b3f;
+}
